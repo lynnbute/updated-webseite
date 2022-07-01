@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact me</title>
+    </head>
+    <body>
+        <h1>Contact Form</h1>
+        <p>Please fill out this form to improve our site.</p>
+            <form method="POST" action="mailto:lynnexjo@gmail.com" enctype="text/plain">
+                <input type="hidden" name="recipient" value="lynnexjo@gmail.com">
+                <input type="hidden" name="subject" value="Contact Form">
+                <input type="hidden" name="redirect" value="main.html">
+                <p><label>Name:</label>
+                    <input name="name" type="text" size="25"></p>
+                <!-- <textarea> creates a multiline textbox --> 
+                <p><label>Comments:</label><br>
+                    <textarea name="comments"
+                    rows="4" cols="36"></textarea></p>
+                <!-- <input type = "password> inserts a "-->
+                <!-- textbox whose display is masked with -->
+                <!-- asterisk characters -->
+                <p><label for="email">Email Address:</label></p>
+                    <input name="email" type="text" size="25" id="email">
+                <p>
+                    <input type="submit" value="Submit">
+                </p>    
+        </form>
+        </body>
+</html>
